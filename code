@@ -170,6 +170,41 @@ int main(){
 }
 
 /*
+Q.9 Write a Program to print the below pattern using nested for loop.
+
+A 
+2 B
+C 3 D
+4 E 5 F
+G 6 H 7 I
+
+*/
+
+#include <stdio.h>
+
+int main()
+{
+    int i,j,a=2;
+    char k = 'A';
+    for (i=1;i<=5;i++)
+    {
+        for(j=1;j<=i;j++)
+        {
+            if((i+j)%2==0)
+            {
+                printf("%c ",k++);
+            }
+            else
+            {
+                printf("%d ",a++);
+            }
+            
+        }
+        printf("\n");
+    }
+}
+
+/*
 Q.10 Write a Program to print the below pattern using nested for loop.
 A
 B C
